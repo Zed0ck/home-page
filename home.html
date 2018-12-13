@@ -1,15 +1,44 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
         <title>Zedock GS</title>
-        <!--
-            Tähän vielä tyylitiedostot sekä bootstrapin linkit
-        -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
         <header>
-            <!-- Tähän mm. logo/banneri ja navigaatio -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <img src="images/logo_small.png">
+                        </a>
+                    </div>
+                </div>
+                <nav class="col-sm-10 text-right" id="main-menu">
+                    <ul>
+                        <li>
+                            <a id="home" data-linkto="zedock-home" href="#">
+                                <span lang="fi">Koti</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="news" data-linkto="zedock-news" href="#">
+                                <span lang="fi">Uutiset</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="media" data-linkto="zedock-media" href="#">
+                                <span lang="fi">Media</span>
+                            </a>
+                        </li>   
+                    </ul>
+                </nav> 
+            </div>
         </header>
         <section>
             <!-- Tähän sisältöä -->
